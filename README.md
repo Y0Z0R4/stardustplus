@@ -1,8 +1,4 @@
-# ✨ Stardust
-
-Stardust is an addon for [Meteor Client](https://meteorclient.com) designed for use on the
-anarchy Minecraft server [2b2t](https://2b2t.org).<br>
-It contains original modules to enhance your experience on Old Server, with a focus on configurability and polish.
+fork of StarDust addon 
 
 ### Feature Set
 #### Commands
@@ -69,28 +65,3 @@ OldSigns functionality can be accessed in the ChatSigns module settings.
 | **Custom GUI Themes**         | *Adds a few custom GUI theme options to your Meteor GUI config.* Credit to [crosby](https://github.com/RacoonDog) for the original implementation of recolored themes. I may add more themes in the future if I feel like it.                                                                                                       |
 
 <br>
-
-### Installation
-
-1. Ensure that [Fabric](https://fabricmc.net) for Minecraft version 1.21.4 is installed.
-2. Download the [latest release](https://github.com/0xTas/stardust/releases/tag/latest-1.21.4), or build the addon from source with `./gradlew build`.
-3. Drop the .jar file in your `.minecraft/mods` folder, along with [Meteor Client for 1.21.4](https://meteorclient.com/archive).
-4. Run your Fabric installation.
-<br>
-
-### Building & Contributing
-
-1. Building the addon requires that Java 21 is installed, and in your PATH environment.
-2. After cloning and inspecting the source code, the addon can be built with the `./gradlew build` command.
-3. To contribute, IntelliJ Idea is recommended. First, run the `./gradlew genSources` task to generate a mapped version of Minecraft's code locally.
-4. Then you can apply those mappings by ctrl+clicking on any Minecraft class and selecting `Choose Sources` from the red banner across the top.
-5. Select the appropriate sources Jar from the list (usually named something like `net.minecraft:minecraft-merged-...-sources.jar`) and hit `Ok`.
-6. Now you can contribute or modify code with those mappings as a reference (ctrl+click to view the source for any class.)
-
->Issues and pull requests are welcome if you would like to submit them.
-<br>
-
-### Credits
-- [**Meteor Development**](https://github.com/MeteorDevelopment) *for [Meteor Client](https://meteorclient.com).*
-- [**rfresh**](https://github.com/rfresh2) *for the [2b2t statistics api](https://api.2b2t.vc).*
-- [**crosby**](https://github.com/RacoonDog) *for the [custom GUI themes impl](https://github.com/RacoonDog/Tokyo-Client/blob/main/src/main/java/io/github/racoondog/tokyo/utils/RecolorGuiTheme.java).*
