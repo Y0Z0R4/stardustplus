@@ -39,6 +39,8 @@ public class Stardust extends MeteorAddon {
         Commands.add(new Playtime2b2t());
         Commands.add(new LastSeen2b2t());
         Commands.add(new FirstSeen2b2t());
+        Commands.add(new Queue());
+        Commands.add(new UUID());
 
         Modules.get().add(new Honker());
         Modules.get().add(new WaxAura());
@@ -64,6 +66,7 @@ public class Stardust extends MeteorAddon {
         Modules.get().add(new SignHistorian());
         Modules.get().add(new AutoDyeShulkers());
         Modules.get().add(new AutoDrawDistance());
+        Modules.get().add(new NewChunks());
 
         GuiThemes.add(SnowyTheme.INSTANCE);
         GuiThemes.add(LambdaTheme.INSTANCE);
@@ -91,9 +94,9 @@ public class Stardust extends MeteorAddon {
         Modules.registerCategory(Stardust.CATEGORY);
     }
     @Override
-    public String getWebsite() { return "https://github.com/0xTas/stardust"; }
+    public String getWebsite() { return "https://github.com/Y0Z0R4/stardustplus"; }
     @Override
-    public GithubRepo getRepo() { return new GithubRepo("0xTas", "Stardust", "main", null); }
+    public GithubRepo getRepo() { return new GithubRepo("Yozora", "StardustPlus", "main", null); }
     @Override
     public String getCommit() {
         CustomValue commit = FabricLoader.getInstance()
